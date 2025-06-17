@@ -4,14 +4,15 @@ This document describes the software module decomposition of the Embedded Sensor
 
 # 2. Module List
 
-|Module Name|                 Description|
-|sensor.cpp/h|                Simulates a sensor process that generates and sends data|
-|collector.cpp/h|             Receives data from sensors via IPC and writes to shared memory|
-|logger.cpp/h|                Reads from shared memory and logs to a file|
-|ipc_xxx.cpp/h|               IPC abstraction layer (FIFO, MQ, socket...)|
-|signal_handler.cpp/h|        Handles SIGINT and SIGHUP signals|
-|config.cpp/h|                Parses configuration file|
-|utils.cpp/h|                 Utility functions: timestamp, random, etc.|
+|Module Name                 |Description|
+|----------------------------|-----------------|
+|sensor.cpp/h                |Simulates a sensor process that generates and sends data|
+|collector.cpp/h             |Receives data from sensors via IPC and writes to shared memory|
+|logger.cpp/h                |Reads from shared memory and logs to a file|
+|ipc_xxx.cpp/h               |IPC abstraction layer (FIFO, MQ, socket...)|
+|signal_handler.cpp/h        |Handles SIGINT and SIGHUP signals|
+|config.cpp/h                |Parses configuration file|
+|utils.cpp/h                 |Utility functions: timestamp, random, etc.|
 
 # 3. Module Interfaces
 
