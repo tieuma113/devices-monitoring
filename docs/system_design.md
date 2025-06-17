@@ -22,7 +22,8 @@ This system simulates a multi-sensor environment where each sensor process gener
 3. The **Collector** receives the data, performs optional validation, and writes it into a **shared memory** region.
 4. The **Logger** reads the data from shared memory, appends a timestamp, and writes it to a **log file**.
 5. A **Signal Handler** listens for system signals (e.g., SIGINT, SIGHUP) to gracefully terminate or reload configuration. It coordinates cleanup across all modules.
-'''
+
+```
 +-------------+         IPC          +------------+        Shared Memory        +----------+
 |   Sensor 1  |  ------------------> |            |  -------------------------> |          |
 |   Sensor 2  |  ------------------> |  Collector |                             |  Logger  |
@@ -34,7 +35,7 @@ This system simulates a multi-sensor environment where each sensor process gener
                                    +---------------+
                                    | Signal Handler|
                                    +---------------+
-'''
+```
 
 # 4. IPC Usage
 
