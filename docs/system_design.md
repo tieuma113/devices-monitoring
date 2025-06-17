@@ -27,7 +27,7 @@ This system simulates a multi-sensor environment where each sensor process gener
 +-------------+         IPC          +------------+        Shared Memory        +----------+
 |   Sensor 1  |  ------------------> |            |  -------------------------> |          |
 |   Sensor 2  |  ------------------> |  Collector |                             |  Logger  |
-|   Sensor N  |  ------------------> |            |  <---- signal (terminate)   |          |
+|   Sensor N  |  ------------------> |            |  |          |
 +-------------+                     +------------+                              +----------+
                                         ^   |
                                         |   | signal (reload)
